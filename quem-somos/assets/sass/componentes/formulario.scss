@@ -8,83 +8,58 @@ input[type="radio"], input[type="checkbox"] {
     margin-top: 0px;
     margin-bottom: 5px;
 }
+.input-box {
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000;
+    letter-spacing: 0.5px;
+    
+    label {
+	    display: block;
+	    font-size: 20px;
+	    color: #FFF;
+	    margin-bottom: 20px;
 
+	    &.error {
+			font-size: 16px;
+			margin-top: 10px;
+			line-height: 19px;
+			color: #ff3636;
+			width: 100%;
+			letter-spacing: 2px;
+			position: relative;
+			padding: 10px;
+			background-color: #000;
 
-label {
-    display: block;
-    font-size: 18px;
-    color: #FFF;
-    margin-bottom: 10px;
-    margin-top: 30px;
-
-    &.error {
-		font-size: 16px;
-		margin-top: 10px;
-		line-height: 19px;
-		color: #ff3636;
-		width: 100%;
-		letter-spacing: 2px;
-		position: relative;
-		padding: 10px;
-		background-color: #000;
-
-	    &::before {
-		    content: '';
-		    display: inline-block;
-		    background-color: #e73636;
-		    width: 12px;
-		    vertical-align: middle;
-		    height: 12px;
-		    border-radius: 30px;
-		    margin-top: -3px;
-		    margin-right: 10px;
+		    &::before {
+			    content: '';
+			    display: inline-block;
+			    background-color: #e73636;
+			    width: 12px;
+			    vertical-align: middle;
+			    height: 12px;
+			    border-radius: 30px;
+			    margin-top: -3px;
+			    margin-right: 10px;
+		    }
 	    }
     }
-}
-input[type="text"],
-input[type="email"] {
-    display: block;
-    width: 100%;
-    border: 1px solid #666;
-    padding: 8px 10px;
-    font-size: 18px;
-    color: #666;
-}
 
-.mc-field-group.input-group {
-	display: block;
-	margin-top: 30px;
-	strong {
-		display: block;
-		font-size: 20px;
-		color: #FFF;
-		margin-bottom: 20px;
-		margin-top: 30px;	
+	.outros-input input[type="text"] {
+	    padding: 10px;
+	    margin-top: 10px;
+	    width: 100%;
+	    max-width: 300px;
 	}
-	label {
-	    display: inline-block;
-	    margin: 0 0 5px 6px;
-    }
-}
 
-#mc-embedded-subscribe {
-    margin-top: 30px;
-    padding: 13px 20px;
-    color: #FFF;
-    background-color: #6d5b97;
-    font-size: 22px;
-    border: 1px solid #C3B9D5;
-    font-weight: 400;
-    width: 100%;
-    text-decoration: none;
-    text-align: center;
-    display: block;
-    cursor: pointer;
-    max-width: 100%;
-    font-family: 'Roboto Slab', serif;
-    transition: 0.4s all;
-	&:hover {
-	    background-color: #4b3d6d;
+	input[type="text"] {
+	    display: block;
+	    width: 100%;
+	    border: 2px solid #f37a29;
+	    padding: 20px;
+	    font-size: 18px;
+	    color: #f37a29;
 	}
 }
 

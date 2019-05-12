@@ -4,70 +4,45 @@ body {
 }
 .header-home {
 	background-color: #303030;
-	height: 120px;
+	height: 135px;
 	
 	.img-center {
 	    max-height: 80px;
-	    padding: 20px 0;
+	    padding: 25px 0;
 	    box-sizing: content-box;
-	    position: absolute;
-	    top: 0;
 	}
 }
-#btn-to-mvp {
-    color: #FFF;
-    text-decoration: none;
-    border: 1px solid #f37a29;
-    background-color: #f37a29;
-    border-radius: 4px;
-    padding: 15px;
-    position: absolute;
-    top: 30px;
-    right: 0;
-    transition: 0.2s all;
-    &:hover {
-	    background-color: transparent;
-	    color: #F37a29;
-    }
-}
+
 .section-0 {
 	position: relative;
     .section-info {
-		background-image: url(../assets/images/filtro-roxo.png);
-		background-size: cover;
-		background-repeat: no-repeat;
-		background-position: center bottom;
-		padding-top: 40px;
-		height: 800px;
-		position: absolute;
-		top: 0;
-		width: 100%;
-		
-		h1 {
+    	background-image: url(../assets/images/filtro-roxo.png);
+	    background-size: cover;
+	    background-repeat: no-repeat;
+	    background-position: center bottom;
+	    padding-top: 50px;
+	    height: 900px;
+	    position: absolute;
+	    top: 0;
+	    width: 100%;
+
+		h2 {
 			font-weight: bold;
-			font-size: 65px;
+			font-size: 50px;
 			line-height: 58px;
 			width: 920px;
 			margin: 0 auto 40px auto;
 			letter-spacing: 2px;
 			color: #FFF;
-			margin-bottom: 50px;
-		}
-		h2 {
-		    font-weight: bold;
-		    font-size: 36px;
-		    line-height: 38px;
-		    margin: 0 auto 40px auto;
-		    letter-spacing: 2px;
-		    color: #FFF;
+			margin-bottom: 30px;
 		}
 		p {
-		    font-size: 20px;
-		    line-height: 30px;
+		    font-size: 28px;
+		    line-height: 36px;
 		    letter-spacing: 1px;
 		    font-weight: 300;
 		    color: #FFF;
-		    margin-bottom: 20px;
+		    margin-bottom: 50px;
 		}
 	}
 
@@ -76,18 +51,7 @@ body {
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center;
-		height: 800px;
-	}
-
-	.formulario-box {
-	    background-color: #F37A29;
-	    padding: 20px 40px;
-	    border-radius: 12px;
-		h3 {
-		    font-size: 24px;
-		    color: #FFF;
-		    line-height: 32px;
-		}
+		height: 1280px;
 	}
 }
 
@@ -204,13 +168,6 @@ footer {
     }
 }
 
-@media screen and ( max-width: 1200px ) {
-	.section-0 .section-info h2 {
-	    font-size: 40px;
-	    line-height: 48px;
-	    width: 100%;
-	}
-}
 @media screen and ( max-width: 991px ) {
 	.section-0 {
 		
@@ -230,25 +187,17 @@ footer {
 		}
 
 		.image-background {
-	        height: 100vh;
+		    height: 1028px;
 		}
 
 		.section-info {
 		    background-image: none;
-		    height: auto;
-		    padding-bottom: 50px;
+		    height: 700px;
 		    background-color: rgba(84, 62, 119, 0.9);
-			h1 {
-				width: 100%;
-				font-size: 45px;
-				line-height: 50px;
-			}
 			h2 {
-			    font-size: 30px;
-			    line-height: 33px;
-			    br {
-			    	display: none;
-			    }
+			    width: 100%;
+			    font-size: 38px;
+			    line-height: 48px;
 			}
 			p {
 			    font-size: 24px;
@@ -265,6 +214,7 @@ footer {
 	    line-height: 30px;
 	}
 }
+
 @media screen and ( max-width: 767px ) {
 	footer img {
 	    display: block;
@@ -274,35 +224,11 @@ footer {
 	.input-box input[type="text"] {
 		padding: 10px;	
 	}
-	.section-0 .section-info {
-	    position: relative;
-	    height: auto;
-	}
-	.section-0 .image-background {
-		display: none;
-	}
-	.section-0 .section-info h2 {
-	    font-size: 34px;
-	    line-height: 38px;
-	}
-	.section-0 .section-info p {
-		font-size: 20px;
-	}
-}
-@media screen and ( max-width: 576px ) { 
-	.header-home {
-	    height: 230px;
-		.img-center, #btn-to-mvp {	
-		    position: relative;
-		    display: block;
-		    text-align: center;
-		}
-	}
 }
 @media screen and ( max-width: 480px ) {
 
 	.header-home {
-		height: 200px;
+		height: 110px;
 
 		.img-center {
 			max-height: 60px;
@@ -325,18 +251,13 @@ footer {
 		    }
 		}
 
-		.formulario-box {
-		    padding: 20px;
-		}
-
 		.image-background {
-		    height: auto;
-		    background-image: none;
+	        height: 880px;
 		}
 
 		.section-info {
-		    padding: 30px 20px;
-		    position: relative;
+		    height: auto;
+		    padding-bottom: 60px;
 			h2 {
 			    font-size: 26px;
 			    line-height: 30px;
@@ -361,9 +282,5 @@ footer {
 	footer p {
 	    font-size: 14px;
 	    line-height: 20px;
-	}
-	#mc-embedded-subscribe {
-	    font-size: 18px;
-	    line-height: 23px;
 	}
 }
